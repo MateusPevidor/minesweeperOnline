@@ -7,7 +7,7 @@ const app = express()
 const server = http.Server(app)
 const io = socketIO(server)
 
-const port = 5000
+const port = process.env.PORT || 5000
 
 app.set('port', port)
 app.use('/static', express.static(__dirname + '/static'))
