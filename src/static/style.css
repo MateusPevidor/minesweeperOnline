@@ -1,0 +1,80 @@
+canvas {
+  position: relative;
+  width: 960px;
+  height: 512px;
+  top: 280px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid #303045;
+  margin-bottom: 30px;
+}
+
+body {
+  background-color: #202030;
+}
+
+hr {
+  height: 3px;
+  background-color: #303045;
+  border: none
+}
+
+.main-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.game-container {
+  width: 1080px;
+  height: 900px;
+  background: #151522;
+  border: 3px solid #303045;
+  border-radius: 40px;
+}
+
+.menu-container {
+  margin-top: 20px;
+  text-align: center;
+  user-select: none;
+}
+
+.menu-container span {
+  color: #fff;
+  font-family: 'Segoe UI';
+  font-size: 45px;
+  font-weight: 700;
+  background-color: #202030;
+  border: 3px solid #303045;
+  border-radius: 10px;
+  padding: 5px 20px 5px 20px;
+  margin: 0px 40px;
+}
+
+.runners-container {
+  position: relative;
+  margin-left: 35px;
+}
+
+.runners-container span{
+  color: #fff;
+  font-family: 'Segoe UI';
+  font-size: 28px;
+  user-select: none;
+}
+
+.runners-container .progress {
+  width: 0px;
+  height: 20px;
+  background-color: rgba(255,255,0, 0.5);
+  border-right: 2px solid yellow;
+  transition: 1s;
+}
+
+.runners-container img {
+  position: absolute;
+  right: 0;
+  margin-right: 35px;
+  transform: translate(0, -100%);
+}

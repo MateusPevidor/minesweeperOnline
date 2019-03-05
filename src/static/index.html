@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <title>Minesweeper</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="socket.io/socket.io.js"></script>
+    
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="game-container">
+        <div class="menu-container">
+          <span id="score">Score: 0</span>
+          <span id="flags">Flags: 0</span>
+        </div>
+        <canvas></canvas>
+        <hr>
+        <div class="runners-container">
+          <div>
+            <span>You</span>
+            <div class='progress' id="runner_1"></div>
+          </div>
+          <div>
+            <span>Runner 2</span>
+            <div class='progress' id="runner_2"></div>
+          </div>
+          <div>
+            <span>Runner 3</span>
+            <div class='progress' id="runner_3"></div>
+          </div>
+          <div>
+            <span>Runner 4</span>
+            <div class='progress' id="runner_4"></div>
+          </div>
+          <div>
+            <img src="static/finishLine.png">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="static/constants.js"></script>
+    <script src="static/board.js"></script>
+    <script src="static/square.js"></script>
+    <script src="static/script.js"></script>
+    <script src="static/client.js"></script>
+  </body>
+</html>
